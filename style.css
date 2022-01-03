@@ -1,0 +1,251 @@
+/* -- FONTES -- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* -- RESET --*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* -- BASE --*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 400 1rem 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased; 
+}
+
+.title {
+  font: 600 3rem 'Poppins', sans-serif;
+  color: #161212;
+  -webkit-font-smoothing: auto; 
+}
+
+.button {
+  background-color: #DA2535;
+  color: #F9F9F9;
+  height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: .25rem;
+  font: 600 1rem 'Poppins', sans-serif;
+}
+
+.button:hover {
+  background-color: #f73816;
+  transition: background-color .3s ease-in-out;
+}
+
+/* -- LAYOUT --*/
+.container {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.section {
+  padding: 5rem 7rem;
+}
+
+.section .title {
+  margin-bottom: 1rem;
+}
+
+.section header {
+  margin-bottom: 4rem;
+}
+
+#header {
+  background: #F9F9F9;
+  /* border-bottom: 1px solid #e4e4e4; */
+  display: flex;
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#header.scroll {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  margin-top: 4.5rem;
+}
+
+/* -- LOGO --*/
+.logo {
+  font: 500 1.5rem 'Poppins', sans-serif;
+  color: #161212;
+}
+
+/* -- NAVIGATION --*/
+nav {
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav ul li {
+  text-align: center;
+}
+
+nav ul li a {
+  transition: color 0.2s;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: #DA2535;
+}
+
+nav ul li a:after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #DA2535;
+
+  position: absolute;
+  left: 0;
+  bottom: -1.5rem;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+  transition: width 0.2s;
+}
+
+nav .menu {
+  opacity: 0;
+  visibility: hidden;
+  top: -20rem;
+  transition: 0.2s;
+}
+
+nav .menu ul {
+  display: none;
+}
+
+/* -- MOSTRAR MENU --*/
+nav.show .menu {
+  opacity: 1;
+  visibility: visible;
+
+  background: #F9F9F9;
+
+  height: 100%;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: grid;
+  place-content: center;
+}
+
+nav.show .menu ul {
+  display: grid;
+}
+
+nav.show ul.grid {
+  gap: 4rem;
+}
+
+/* toggle menu */
+.toggle {
+  color: #DA2535;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+nav .icon-close {
+  visibility: hidden;
+  opacity: 0;
+
+  position: absolute;
+  top: -1.5rem;
+  right: 1.5rem;
+
+  transition: 0.2s;
+}
+
+nav.show div.icon-close {
+  visibility: visible;
+  opacity: 1;
+  top: 1.5rem;
+}
+
+/* -- HOME --*/
+#home {
+  overflow: hidden;
+  background: #F7C7B9;
+}
+
+#home .container {
+  margin: 0;
+}
+
+#home .image img {
+  position: relative;
+  width: 100%;
+}
+
+#home .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+
+#home .text h1 {
+  margin-bottom: 1rem;
+}
+
+#home .text p {
+  margin-bottom: 2rem;
+}
+
+/* -- ACESSORIOS --*/
+#acessorios p {
+  color:#8D8D8D ;
+}
+
+.cards.grid {
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 3.625rem 2rem;
+  text-align: center;
+}
+
+.card img {
+  /* display: block; */
+  margin-bottom: 1.5rem;
+  font-size: 12rem;
+}
+
+.card .title {
+   font-size: 1.25rem;
+   margin-bottom: 1rem;
+}

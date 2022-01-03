@@ -6,16 +6,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Uma página dedicada a doações de Natal.">
   <title>Feliz Natal</title>
+
+  <!--  ICONES -->
+  <link rel="stylesheet" href="assets/fontes/style.css">
+
+  <!-- STYLES -->
   <link rel="stylesheet" href="style.css">
 </head>
 
   <body>
-    
-    <header>
-
+    <header id="header">
+      <nav class="container">
+        <a class="logo" href="#">
+          <img src="./assets/noel.svg" alt="Papai Noel">
+          Feliz Natal
+        </a>
+        <!-- MENU -->
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#acessorios">Acessórios</a></li>
+            <li><a class="title" href="#doacao">Doação</a></li>
+            <li><a class="title" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+           <!-- MENU -->
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-close"></div> 
+      </nav>
     </header>
 
     <main>
+      <!-- HOME -->
+      <section class="section" id="home">
+        <div class="container grid">
+          <div class="image">
+            <img src="./assets/maodonoel.svg" alt="Mão do Papai Noel entregando um presente">
+          </div>
+          <div class="text">
+            <h1 class="title">Feliz Natal e Feliz Ano Novo</h1>
+            <p>
+              Nessas festas de fim de ano mande um presente para a pessoa amada e compartilhe a alegria do Natal.
+            </p>
+            <a class="button" href="#">
+              <span>
+                <img src="./assets/presentebutton.svg" alt="Imagem de presente">
+                Fazer uma doação
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="acessorios">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Acessórios</h2>
+            <p>Nessas festas de fim de ano mande um presente para a pessoa amada e compartilhe a alegria do Natal.</p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <div class="img">
+                <img src="assets/presente.svg" alt="Imagem de presente">
+              </div>
+              <h3 class="title">Presentes</h3>
+              <p>Eles são os melhores presentes que existem.</p>
+            </div>
+            <div class="card">
+              <div class="img">
+                <img src="assets/sino.svg" alt="Imagem de 2 sinos">
+              </div>
+              <h3 class="title">Enfeites</h3>
+              <p>Dê uma decoração.</p>
+            </div>
+            <div class="card">
+              <div class="img">
+                <img src="assets/doce.svg" alt="Imagem de um doce de natal">
+              </div>
+              <h3 class="title">Doces</h3>
+              <p>Aproveite os doces natalinos.</p>
+            </div>
+            <div class="card">
+              <div class="img">
+                <img src="assets/meia.svg" alt="Imagem de uma meia de natal">
+              </div>
+              <h3 class="title">Muito amor</h3>
+              <p>Aproveite os sentimentos que duram para sempre.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="doacao">
+        <div class="container grid">Doação</div>
+      </section>
 
     </main>
 
@@ -23,5 +107,6 @@
 
     </footer>
     
+    <script src="main.js"></script>
   </body>
 </html>
