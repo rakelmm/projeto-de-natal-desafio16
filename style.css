@@ -95,6 +95,13 @@ main {
 .logo {
   font: 500 1.5rem 'Poppins', sans-serif;
   color: #161212;
+
+}
+
+.logo img {
+  width: 2rem;
+  float: left;
+  margin-right: 0.75rem;
 }
 
 /* -- NAVIGATION --*/
