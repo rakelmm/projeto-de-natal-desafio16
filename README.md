@@ -17,6 +17,15 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - CSS
 - JavaScript
 
+Bibliotecas
+
+- [Google Fonts](https://fonts.google.com/)
+- [ScrollRevel](https://scrollrevealjs.org)
+
+Utilitários
+
+- [IconMoon](https://icomoon.io/app/#/select)
+
 
 ## 💻 Projeto
 

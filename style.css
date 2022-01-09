@@ -43,6 +43,11 @@ body {
   font: 600 1rem 'Poppins', sans-serif;
 }
 
+.button img {
+  float: left;
+  margin-right: 14px;
+}
+
 .button:hover {
   background-color: #f73816;
   transition: background-color .3s ease-in-out;
@@ -72,8 +77,7 @@ body {
 }
 
 #header {
-  background: #F9F9F9;
-  /* border-bottom: 1px solid #e4e4e4; */
+  background: #F7C7B9;
   display: flex;
 
   width: 100%;
@@ -84,7 +88,7 @@ body {
 }
 
 #header.scroll {
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
 }
 
 main {
@@ -122,8 +126,9 @@ nav ul li a {
   position: relative;
 }
 
-nav ul li a:hover {
-  color: #DA2535;
+nav ul li a:hover,
+nav ul li a.active {
+  color: #DA2535; 
 }
 
 nav ul li a:after {
@@ -135,11 +140,13 @@ nav ul li a:after {
   position: absolute;
   left: 0;
   bottom: -1.5rem;
+
+  transition: width 0.2s;
 }
 
-nav ul li a:hover::after {
+nav ul li a:hover::after,
+nav ul li a.active::after {
   width: 100%;
-  transition: width 0.2s;
 }
 
 nav .menu {
@@ -235,6 +242,11 @@ nav.show div.icon-close {
 /* -- ACESSORIOS --*/
 #acessorios p {
   color:#8D8D8D ;
+  text-align: center;
+}
+
+#acessorios h2 {
+  text-align: center;
 }
 
 .cards.grid {
@@ -242,12 +254,11 @@ nav.show div.icon-close {
 }
 
 .card {
-  padding: 3.625rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
 }
 
 .card img {
-  /* display: block; */
   margin-bottom: 1.5rem;
   font-size: 12rem;
 }
@@ -255,4 +266,170 @@ nav.show div.icon-close {
 .card .title {
    font-size: 1.25rem;
    margin-bottom: 1rem;
+}
+
+/* -- DOACAO --*/
+#doacao {
+  overflow: hidden;
+  background: #F7C7B9;
+}
+
+#doacao  .container {
+  margin: 0;
+}
+
+#doacao .image img {
+  position: relative;
+  width: 100%;
+}
+
+#doacao  .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+
+#doacao  .text h2 {
+  margin-bottom: 1rem;
+}
+
+#doacao  .text p {
+  margin-bottom: 2rem;
+}
+
+/* -- FOOTER --*/
+footer {
+  background: #F9F9F9;
+}
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+footer .social {
+  display: flex;
+  gap: 2rem;
+}
+
+footer .social a{
+  transition: .3s;
+  display: inline-block;
+}
+
+footer .social a:hover {
+  transform: translateY(-8px);
+}
+
+/* Back to top */
+.back-to-top {
+  background: #F7C7B9;
+  color: #F9F9F9;
+
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  padding: .5rem;
+  clip-path: circle();
+
+  font-size: 1.5rem;
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: .3s;
+  transform: translateY(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* -- MEDIA QUERIES --*/
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section header {
+    max-width: 32rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 3rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 500 1rem 'Poppins', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+
+  nav .icon-menu {
+    display: none;
+  }
+
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+ 
+  }
+
+  #home .image {
+    order: 1;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  #doacao .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  #doacao .text {
+    order: 0;
+    max-width: 30rem;
+    text-align: left;
+  }
+
+  footer.section {
+    padding: 3rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
