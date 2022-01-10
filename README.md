@@ -45,4 +45,4 @@ Você pode visualizar o layout do projeto original através [desse link](https:/
 
 ---
 
-Feito com ❤️ por Rakel Moreira.
+Feito com ❤️ por Rakel Moreira!
