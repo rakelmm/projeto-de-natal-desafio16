@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-<img alt="imagem do projeto" src="assets/feliznatal.svg" width="100%">
+<img alt="imagem do projeto" src="assets/feliznatal.png" width="100%">
 </p>
 
 
