@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-<img alt="imagem do projeto" src="assets/Feliz Natal.svg" width="100%">
+<img alt="imagem do projeto" src="assets/feliznatal.svg" width="100%">
 </p>
 
 
@@ -40,7 +40,7 @@ O layout do projeto foi baseado no desafio 16 do @iuricode para treinamento de h
 Você pode visualizar o layout do projeto original através [desse link](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=39341%3A687) (o meu está modificado). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 
-<h5 align="center"><a href="#">ACESSE AQUI O PROJETO FINAL</a></h5>
+<h5 align="center"><a href="https://projeto-de-natal-desafio16.vercel.app/#home">ACESSE AQUI O PROJETO FINAL</a></h5>
 
 
 ---
